@@ -3,30 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Telephone Observer System</title>
+    <title>Telephone</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Telephone Observer System</h1>
+        <h1>Telephone</h1>
         <div class="controls">
-            <label for="phoneNumber">Add Phone Number:</label>
-            <input type="text" id="phoneNumber" placeholder="Enter phone number">
-            <button id="addPhoneButton">Add Phone Number</button>
+            <input id="phone-number" type="text" placeholder="Enter phone number">
+            <div class="button-container">
+                <button id="add-phone-number">Add Phone Number</button>
+                <button id="remove-phone-number">Remove Phone Number</button>
+                <button id="dial-phone-number">Dial Phone Number</button>
+            </div>
+            
         </div>
-
-        <div class="controls">
-            <label for="dialNumber">Dial Phone Number:</label>
-            <input type="text" id="dialNumber" placeholder="Enter phone number to dial">
-            <button id="dialButton">Dial</button>
-        </div>
-
+       
         <div id="output" class="output">
             <h3>Output:</h3>
-            <pre id="outputText"></pre>
+            <pre></pre>
         </div>
     </div>
-
+   
+  
     <script src="script.js"></script>
 </body>
 </html>
+
+
